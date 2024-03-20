@@ -1,15 +1,10 @@
 <div class="container">
     <img src="assets/img/task-list-null.png" alt="Sua lista esta vazia - imagem ilustrativa" loading="eager"/>
 
-    <button class="btn btn-primary"> Gerar lista de tarefas</button>
-
-    <div>
-        <label class="input-label-text" for="inputValue">
-            <input type="text" placeholder="Adicione um novo item" id="inputValue" autofocus>
-
-            <button class="btn btn-primary-circle" title="Adicione um novo item">
-
-            </button>
-        </label>
-    </div>
+    @if(addItenm()){
+        <button class="btn btn-primary" (click)="addItenm.set(false)"> Gerar lista de tarefas</button>
+    } @else {
+        <app-input-add-item/>
+    }
+    
 </div>
