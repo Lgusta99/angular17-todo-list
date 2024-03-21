@@ -19,11 +19,11 @@
     }
 
     &.btn-danger, &.btn-danger-circle {
-        color: var(--whiter);
+        color: var(--white);
         background: var(--red);
 
         &:hover{
-            background: var(--red);
+            background: var(--red-010);
         }
     }
 
